@@ -103,7 +103,8 @@ Masukkan Input (1-6): ''')
                     elif kata_kunci.lower() in directory[key]["Email"].lower():
                         print("| {} \t| {} \t| {} \t| {} \t| {} \t| {}".format(directory[key]["Nama"],directory[key]["Kategori"],directory[key]["Kota"],directory[key]["Alamat"],directory[key]["Telepon"],directory[key]["Email"]))
                     else:
-                        continue
+                        print('\n--------------------------------------- DATA TIDAK DITEMUKAN ---------------------------------------')
+                        break
             
             elif menu_tampilan == '4':
                 break
